@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon API</title>
+    <link rel="stylesheet" type="text/css" href="./src/styles/style.css">
+</head>
+
+<body>
+    <header>
+        <app-bar></app-bar>
+    </header>
+    <br>
+    <br>
+    <search-pokemon></search-pokemon>
+    <search-bar></search-bar>
+
+    <div class="pokemon-list">
+        <div id="pokemon-data"></div>
+    </div>
+
+    <explore-poke id="explore" style="display: none;"></explore-poke>
+
+    <div class="pagination">
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./src/script/data/script.js"></script>
+    <script src="./src/script/component/pokemon-card.js"></script>
+    <script src="./src/script/component/app-bar.js"></script>
+    <script src="./src/script/component/search-bar.js"></script>
+    <script src="./src/script/component/app-footer.js"></script>
+    <script src="./src/script/component/pokemon-detail.js"></script>
+
+    <br>
+    <footer>
+        <app-footer></app-footer>
+    </footer>
+
+
+</body>
+
+</html>

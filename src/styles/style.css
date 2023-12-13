@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.pokemon-list {
+  max-width: 70%;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #ffffcc, #ffcc00);
+}
+
+#pokemon-data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+pokemon-card {
+  flex: 0 0 calc(20% - 2%);
+  max-width: calc(20% - 2%);
+  margin: 1%;
+}
+
+@media screen and (max-width: 1024px) {
+  pokemon-card {
+    flex: 0 0 calc(25% - 2%);
+    max-width: calc(25% - 2%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  pokemon-card {
+    flex: 0 0 calc(50% - 2%);
+    max-width: calc(50% - 2%);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  pokemon-card {
+    flex: 0 0 calc(100% - 2%);
+    max-width: calc(100% - 2%);
+    margin: 2%; /* Tambahkan margin yang lebih besar untuk tampilan yang lebih sempit */
+  }
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+#first-button,
+#prev-button,
+#next-button,
+#last-button {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#first-button:hover,
+#prev-button:hover,
+#next-button:hover,
+#last-button:hover {
+  background-color: #ffc107;
+}
+
+.page-button.active {
+  background-color: #ffab00;
+  color: #fff;
+}
+
+.page-button {
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.page-button:hover {
+  background-color: #ffc107;
+}
